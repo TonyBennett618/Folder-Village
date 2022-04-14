@@ -1,6 +1,10 @@
+
+
+//past this point is dialogue
+
 function cyDialogue(){
     var modal = document.getElementById("cyModal");
-    
+
     // Get the button that opens the modal
     var btn = document.getElementById("Cy");
 
@@ -9,7 +13,7 @@ function cyDialogue(){
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
+    // When the user clicks the button, open the modal
     Cy.onclick = function() {
     modal.style.display = "block"
     }
@@ -24,7 +28,7 @@ function cyDialogue(){
     if (event.target == modal) {
         modal.style.display = "none";
     }
-    } 
+    }
     // this is for dialogue etc
 
 };
@@ -41,7 +45,7 @@ function cyDialogueYes(){
 
     yes.onclick = function() {
         nextModal.style.display = "block";
-    
+
     }
 
 
@@ -49,7 +53,7 @@ function cyDialogueYes(){
 
 function goToSleep(){
     var bed = document.getElementById("bed");
-    
+
     var alertMessage = "You feel well rested."
     var r = confirm(alertMessage);
 
