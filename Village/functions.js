@@ -5,14 +5,12 @@ var current = document.getElementsByClassName("current");
 var okBtn = document.getElementsByClassName("ok");
 var span = document.getElementsByClassName("close");
 
-
-
-function closeIt(this){
+function closeIt(){
 // on button click, close function
   //var current = document.getElementsByClassName("current");
-  alert("boop");
+  //alert("boop");
   //current.style.display = "none"
-  $(this).addClass("test");
+  $(".modal").removeClass("current").css("display","none");
 }
 
 
