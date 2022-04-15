@@ -1,6 +1,20 @@
 
 
 //past this point is dialogue
+var current = document.getElementsByClassName("current");
+var okBtn = document.getElementsByClassName("ok");
+var span = document.getElementsByClassName("close");
+
+
+
+function closeIt(this){
+// on button click, close function
+  //var current = document.getElementsByClassName("current");
+  alert("boop");
+  //current.style.display = "none"
+  $(this).addClass("test");
+}
+
 
 function cyDialogue(){
     var modal = document.getElementById("cyModal");
@@ -8,13 +22,12 @@ function cyDialogue(){
     // Get the button that opens the modal
     var btn = document.getElementById("Cy");
 
-
-
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    // var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal
     Cy.onclick = function() {
+    modal.classList.add("current")
     modal.style.display = "block"
     }
 
@@ -37,16 +50,49 @@ function cyDialogue(){
 function cyDialogueYes(){
     var prevModal = document.getElementById("cyModal");
     var nextModal = document.getElementById("cyModalYes");
-    var hidden = document.getElementById("hidden");
+    var ok = document.getElementsByClassName("ok");
+
+
+    // Get the <span> element that closes the modal
+    // var span = document.getElementsByClassName("close")[1];
+
+    span.onclick = function() {
+    nextModal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+    if (event.target == nextModal) {
+        nextModal.style.display = "none";
+    }
+    }
+
+    //alert("Sup")
+    prevModal.classList.remove("current")
+    nextModal.classList.add("current")
+    prevModal.style.display = "none"
+    nextModal.style.display = "block"
+
+    ok.onclick = function(){
+    nextModal.style.display = "none";
+    }
+};
+
+function cyDialogueNo(){
+    var prevModal = document.getElementById("cyModal");
+    var nextModal = document.getElementById("cyModalNo");
     var yes = document.getElementsByClassName("yes");
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    // var span = document.getElementsByClassName("close")[0];
 
-    yes.onclick = function() {
-        nextModal.style.display = "block";
-
+    span.onclick = function() {
+    nextModal.style.display = "none";
     }
+
+
+    //alert("Sup")
+    prevModal.style.display = "hidden"
+    nextModal.style.display = "block"
 
 
 };
