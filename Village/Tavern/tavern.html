@@ -49,8 +49,8 @@
             <div class="item"></div>
             <div class="item person">
                 <img class="icon" src="userIcon.png">
-                <p id="Bartender" onclick="tenderDialogue()">Bartender</p>
-                <p class="hidden">Welcome to the Drunken Skunk, what can I getchya?</p>
+                <p id="Bartender" onclick="barDialogue()">Bartender</p>
+                <p class="hidden">We got mead a'flowin' during happy hour!</p>
             </div>
             <div class="item"></div>
             <div class="item"></div>
@@ -88,17 +88,17 @@
             <div class="item"></div>
             <div class="item person">
                 <img class="icon" src="userIcon.png">
-                <p id="patronOne" onclick="patronThreeDialogue()">O'Callaghan</p>
+                <p id="patronOne">O'Callaghan</p>
                 <p class="hidden">Did ya hear about that poor kid at the lake? He was drowned and torn asunder.</p>
             </div>
             <div class="item person">
                 <img class="icon" src="userIcon.png">
-                <p id="patronTwo" onclick="patronTwoDialogue()">Ethan</p>
+                <p id="patronTwo">Ethan</p>
                 <p class="hidden">Spirits are high today! Everyone is havin' a good time!</p>
             </div>
             <div class="item person">
                 <img class="icon" src="userIcon.png">
-                <p id="patronThree" onclick="patronThreeDialogue()">Angela</p>
+                <p id="patronThree" onclick="angelaDialogue()">Angela</p>
                 <p class="hidden">You seem new, let me treat you to a drink.</p>
             </div>
             <div class="item"></div>
@@ -230,6 +230,39 @@
             <div class="item"></div>
         </div>
 
+    </div>
+
+    <!-- Down here are the modals -->
+    <div id="barModal" class="modal">
+       <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <p class = "curDial">
+                Hahaa! Welcome to the Drunken Skunk! We are having our happy hour right now. Would you like a tankard of mead?
+            </p>
+            <button class="button yes" onclick="barDialogueYes()">Ok</button>
+            <button class="button no" onClick="barDialogueNo()">Cancel</button>
+        </div>
+
+    </div>
+
+    <div id="barModalYes" class="modal" id="hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+              <p class = "curDial">
+                  Here ya go! We hope you enjoy the mead, our company, and our village!
+              <button class="button ok" onclick="closeIt()">Ok</button>
+        </div>
+    </div>
+
+    <div id="barModalNo" class="modal" id="hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+              <p class = "curDial">
+                  No worries lad, let me know if I can getchya somethin'.
+              </p>
+              <button class="button ok" onclick="closeIt()">Ok</button>
+        </div>
     </div>
 </body>
 <script src="jquery-3.6.0.min.js"></script>
