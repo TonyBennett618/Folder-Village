@@ -12,17 +12,18 @@ function closeIt(){
 }
 
 
-function cyDialogue(){
-    var modal = document.getElementById("cyModal");
+//Innkeepers dialogue
+function innDialogue(){
+    var modal = document.getElementById("innModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("Cy");
+    var btn = document.getElementById("Innkeeper");
 
     // Get the <span> element that closes the modal
     // var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal
-    Cy.onclick = function() {
+    Innkeeper.onclick = function() {
     modal.classList.add("current")
     modal.style.display = "block"
     }
@@ -43,9 +44,9 @@ function cyDialogue(){
 };
 
 
-function cyDialogueYes(){
-    var prevModal = document.getElementById("cyModal");
-    var nextModal = document.getElementById("cyModalYes");
+function innDialogueYes(){
+    var prevModal = document.getElementById("innModal");
+    var nextModal = document.getElementById("innModalYes");
     var ok = document.getElementsByClassName("ok");
 
 
@@ -73,9 +74,9 @@ function cyDialogueYes(){
     }
 };
 
-function cyDialogueNo(){
-  var prevModal = document.getElementById("cyModal");
-  var nextModal = document.getElementById("cyModalNo");
+function innDialogueNo(){
+  var prevModal = document.getElementById("innModal");
+  var nextModal = document.getElementById("innModalNo");
   var ok = document.getElementsByClassName("ok");
 
 
