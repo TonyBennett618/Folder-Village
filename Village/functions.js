@@ -76,37 +76,31 @@ function cyDialogueYes(){
 };
 
 function cyDialogueNo(){
-    var prevModal = document.getElementById("cyModal");
-    var nextModal = document.getElementById("cyModalNo");
-    var yes = document.getElementsByClassName("yes");
-
-    // Get the <span> element that closes the modal
-    // var span = document.getElementsByClassName("close")[0];
-
-    span.onclick = function() {
-    nextModal.style.display = "none";
-    }
+  var prevModal = document.getElementById("cyModal");
+  var nextModal = document.getElementById("cyModalNo");
+  var ok = document.getElementsByClassName("ok");
 
 
-    //alert("Sup")
-    prevModal.style.display = "hidden"
-    nextModal.style.display = "block"
+  // Get the <span> element that closes the modal
+  // var span = document.getElementsByClassName("close")[1];
 
+  span.onclick = function() {
+  nextModal.style.display = "none";
+  }
 
+  window.onclick = function(event) {
+  if (event.target == nextModal) {
+      nextModal.style.display = "none";
+  }
+  }
+
+  //alert("Sup")
+  prevModal.classList.remove("current")
+  nextModal.classList.add("current")
+  prevModal.style.display = "none"
+  nextModal.style.display = "block"
+
+  ok.onclick = function(){
+  nextModal.style.display = "none";
+  }
 };
-
-function goToSleep(){
-    var bed = document.getElementById("bed");
-
-    var alertMessage = "You feel well rested."
-    var r = confirm(alertMessage);
-
-    if(r==true)
-    {
-        return
-    }
-    else
-    {
-        return
-    }
-}
