@@ -103,3 +103,16 @@ function innDialogueNo(){
   nextModal.style.display = "none";
   }
 };
+// bed function
+function goToSleep() {
+  var toilet = document.getElementById("toilet")
+
+  if (confirm("Go To Sleep?") == true) {
+
+    //play sleep anim (create animation)
+
+    alert("You used the toilet.")
+  } else {
+    alert("You decide not to sleep.");
+  }
+}

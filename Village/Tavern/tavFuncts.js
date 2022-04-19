@@ -193,3 +193,25 @@ function angelaDialogueNo(){
   nextModal.style.display = "none";
   }
 };
+
+//bathroom function
+
+function useToilet() {
+  var toilet = document.getElementById("toilet")
+
+  if (confirm("Use the toilet?") == true) {
+    alert("You used the toilet.")
+  } else {
+    alert("You step away from the toilet.");
+  }
+}
+
+function wash() {
+  var toilet = document.getElementById("sink")
+
+  if (confirm("Use the sink?") == true) {
+    alert("You wash your hands.")
+  } else {
+    alert("You step away from the sink, you filthy bastard.");
+  }
+}
