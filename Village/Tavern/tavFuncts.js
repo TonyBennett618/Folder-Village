@@ -1,6 +1,3 @@
-
-
-//past this point is dialogue
 var current = document.getElementsByClassName("current");
 var okBtn = document.getElementsByClassName("ok");
 var span = document.getElementsByClassName("close");
@@ -13,18 +10,19 @@ function closeIt(){
   $(".modal").removeClass("current").css("display","none");
 }
 
+//bartender dialogue
 
-function cyDialogue(){
-    var modal = document.getElementById("cyModal");
+function bar(){
+    var modal = document.getElementById("barModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("Cy");
+    var btn = document.getElementById("Bartender");
 
     // Get the <span> element that closes the modal
     // var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal
-    Cy.onclick = function() {
+    Bartender.onclick = function() {
     modal.classList.add("current")
     modal.style.display = "block"
     }
@@ -40,14 +38,12 @@ function cyDialogue(){
         modal.style.display = "none";
     }
     }
-    // this is for dialogue etc
-
 };
 
 
-function cyDialogueYes(){
-    var prevModal = document.getElementById("cyModal");
-    var nextModal = document.getElementById("cyModalYes");
+function barDialogueYes(){
+    var prevModal = document.getElementById("barModal");
+    var nextModal = document.getElementById("barModalYes");
     var ok = document.getElementsByClassName("ok");
 
 
@@ -75,9 +71,9 @@ function cyDialogueYes(){
     }
 };
 
-function cyDialogueNo(){
-  var prevModal = document.getElementById("cyModal");
-  var nextModal = document.getElementById("cyModalNo");
+function barDialogueNo(){
+  var prevModal = document.getElementById("barModal");
+  var nextModal = document.getElementById("barModalNo");
   var ok = document.getElementsByClassName("ok");
 
 
@@ -105,19 +101,19 @@ function cyDialogueNo(){
   }
 };
 
-//Innkeepers dialogue
+//Angela's dialogue
 
-function innDialogue(){
-    var modal = document.getElementById("innModal");
+function angelaDialogue(){
+    var modal = document.getElementById("angelaModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("Innkeeper");
+    var btn = document.getElementById("Angela");
 
     // Get the <span> element that closes the modal
     // var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal
-    Innkeeper.onclick = function() {
+    Angela.onclick = function() {
     modal.classList.add("current")
     modal.style.display = "block"
     }
@@ -138,9 +134,9 @@ function innDialogue(){
 };
 
 
-function innDialogueYes(){
-    var prevModal = document.getElementById("innModal");
-    var nextModal = document.getElementById("innModalYes");
+function angelaDialogueYes(){
+    var prevModal = document.getElementById("angelaModal");
+    var nextModal = document.getElementById("angelaModalYes");
     var ok = document.getElementsByClassName("ok");
 
 
@@ -168,9 +164,9 @@ function innDialogueYes(){
     }
 };
 
-function innDialogueNo(){
-  var prevModal = document.getElementById("innModal");
-  var nextModal = document.getElementById("innModalNo");
+function angelaDialogueNo(){
+  var prevModal = document.getElementById("angelaModal");
+  var nextModal = document.getElementById("angelaModalNo");
   var ok = document.getElementsByClassName("ok");
 
 

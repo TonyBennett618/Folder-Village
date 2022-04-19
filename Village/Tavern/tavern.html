@@ -49,7 +49,7 @@
             <div class="item"></div>
             <div class="item person">
                 <img class="icon" src="userIcon.png">
-                <p id="Bartender" onclick="barDialogue()">Bartender</p>
+                <p id="Bartender" onclick="bar()">Bartender</p>
                 <p class="hidden">We got mead a'flowin' during happy hour!</p>
             </div>
             <div class="item"></div>
@@ -98,7 +98,7 @@
             </div>
             <div class="item person">
                 <img class="icon" src="userIcon.png">
-                <p id="patronThree" onclick="angelaDialogue()">Angela</p>
+                <p id="Angela" onclick="angelaDialogue()">Angela</p>
                 <p class="hidden">You seem new, let me treat you to a drink.</p>
             </div>
             <div class="item"></div>
@@ -251,6 +251,7 @@
             <span class="close">&times;</span>
               <p class = "curDial">
                   Here ya go! We hope you enjoy the mead, our company, and our village!
+                  <br>
               <button class="button ok" onclick="closeIt()">Ok</button>
         </div>
     </div>
@@ -264,7 +265,39 @@
               <button class="button ok" onclick="closeIt()">Ok</button>
         </div>
     </div>
+
+    <div id="angelaModal" class="modal">
+       <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <p class = "curDial">
+                Hey there stranger! You seem new, can I buy you a tankard of mead?
+            </p>
+            <button class="button yes" onclick="angelaDialogueYes()">Ok</button>
+            <button class="button no" onClick="angelaDialogueNo()">Cancel</button>
+        </div>
+
+    </div>
+
+    <div id="angelaModalYes" class="modal" id="hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+              <p class = "curDial">
+                  More the merrier, here ya go!
+              <button class="button ok" onclick="closeIt()">Ok</button>
+        </div>
+    </div>
+
+    <div id="angelaModalNo" class="modal" id="hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+              <p class = "curDial">
+                  No worries lad, let me know if I can getchya somethin'.
+              </p>
+              <button class="button ok" onclick="closeIt()">Ok</button>
+        </div>
+    </div>
 </body>
-<script src="jquery-3.6.0.min.js"></script>
-<script src="functions.js"></script>
+<script src="../jquery-3.6.0.min.js"></script>
+<script src="tavFuncts.js"></script>
 </html>
