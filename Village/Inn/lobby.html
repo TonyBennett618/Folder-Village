@@ -46,8 +46,16 @@
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item" id="frontdesk">
+                <img src="imgIcon.png">
+                <p>FrontDesk.png</p>
+                <img class="hiddenimg" src="desk.png">
+            </div>
+            <div class="item person">
+                <img class="icon" src="userIcon.png">
+                <p id="Innkeeper" onclick="innDialogue()">Innkeeper</p>
+                <p class="hidden">Hello! What can I do for you today?</p>
+            </div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
@@ -193,5 +201,40 @@
         </div>
 
     </div>
+    <!-- Down here are the modals -->
+    <div id="innModal" class="modal">
+       <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <p class = "curDial">
+                Hi there! Welcome to the Foxthorn Inn, would you like to stay the night?
+            </p>
+            <button class="button yes" onclick="innDialogueYes()">Ok</button>
+            <button class="button no" onClick="innDialogueNo()">Cancel</button>
+        </div>
+
+    </div>
+
+    <div id="innModalYes" class="modal" id="hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+              <p class = "curDial">
+                  Okay, here is your key. Your room number is 311. Go upstairs and it should be the first one to your left. Have a nice stay!
+              </p>
+              <button class="button ok" onclick="closeIt()">Ok</button>
+        </div>
+    </div>
+
+    <div id="innModalNo" class="modal" id="hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+              <p class = "curDial">
+                  Alright, enjoy your time at our village!
+              </p>
+              <button class="button ok" onclick="closeIt()">Ok</button>
+        </div>
+    </div>
 </body>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="functions.js"></script>
 </html>

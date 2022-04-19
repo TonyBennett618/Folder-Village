@@ -87,7 +87,7 @@ a{
     font-size:x-large;
     padding-left: 50px;
     padding-right: 50px;
-    font-weight: bold;  
+    font-weight: bold;
     text-align: center;
 }
 
@@ -175,3 +175,7 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
 
 
 /* below this line is area specific styles*/
+#frontdesk p:hover + .hiddenimg{
+    opacity: 1;
+    transition: 1s ease-in;
+}
