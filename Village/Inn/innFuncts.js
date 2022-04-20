@@ -105,13 +105,20 @@ function innDialogueNo(){
 };
 // bed function
 function goToSleep() {
-  var toilet = document.getElementById("toilet")
-
+  var bed = document.getElementById("bed")
+  var coin = document.getElementById("coin")
+  var anim = document.getElementsByClassName("animation-container")
   if (confirm("Go To Sleep?") == true) {
 
     //play sleep anim (create animation)
+    coin.classList.add("visible");
 
-    alert("You used the toilet.")
+    const timeout = setTimeout(anima, 5000)
+    function anima(){
+          coin.classList.remove("visible");
+          //alert("begone thot")
+    }
+    alert("You get a good rest. You feel awake.")
   } else {
     alert("You decide not to sleep.");
   }
