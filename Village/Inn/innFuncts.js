@@ -106,14 +106,14 @@ function innDialogueNo(){
 // bed function
 function goToSleep() {
   var bed = document.getElementById("bed")
-  var coin = document.getElementById("coin")
-  var anim = document.getElementsByClassName("animation-container")
+  var (animation) = document.getElementById("")
+  var anim = document.getElementsByClassName("")
   if (confirm("Go To Sleep?") == true) {
 
     //play sleep anim (create animation)
     coin.classList.add("visible");
 
-    const timeout = setTimeout(anima, 5000)
+    const timeout = setTimeout(anima, x)
     function anima(){
           coin.classList.remove("visible");
           //alert("begone thot")

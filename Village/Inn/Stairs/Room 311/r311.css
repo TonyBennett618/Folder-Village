@@ -176,6 +176,24 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
 
 /* below this line is area specific styles*/
 
+.visible{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#nightstand p:hover + .hiddenimg{
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+#bed p:hover + .hiddenimg{
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+/* this is to test an animation
 .animation-container {
   display: none;
   width : 200px;
@@ -357,20 +375,4 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
     transform : rotate(25deg) translateY(400px);
   }
 }
-
-.visible{
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-#nightstand p:hover + .hiddenimg{
-    opacity: 1;
-    transition: 1s ease-in-out;
-}
-
-#bed p:hover + .hiddenimg{
-    opacity: 1;
-    transition: 1s ease-in-out;
-}
+*/
