@@ -106,7 +106,7 @@ function innDialogueNo(){
 // bed function
 function goToSleep() {
   var bed = document.getElementById("bed")
-  var (animation) = document.getElementById("")
+  var animation = document.getElementById("")
   var anim = document.getElementsByClassName("")
   if (confirm("Go To Sleep?") == true) {
 
