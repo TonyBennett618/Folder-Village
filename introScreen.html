@@ -27,9 +27,13 @@
 
 <script src="anime.min.js"></script>
 <script>
-
-
-
+  anime({
+    targets: 'textGraphic',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1500,
+    direction: 'alternate'
+  });
  // this is for the door mechanism
   anime({
     targets: '.doorLeft',
@@ -46,7 +50,4 @@
     easing:'spring(1,80,10,1)',
   });
 </script>
-<script src="jquery-3.6.0.min.js"></script>
-<script src="functions.js"></script>
-
 </html>
