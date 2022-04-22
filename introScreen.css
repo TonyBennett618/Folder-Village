@@ -30,6 +30,10 @@ a{
 .doorHold{
   display: flex;
   align-items: center;
+  position: fixed;
+  opacity: 0;
+  animation: appear ease-in-out;
+  animation-delay: 8500;
 }
 
 .doorLeft{
@@ -37,7 +41,6 @@ a{
   width: 10vh;
   height: 30vh;
   background-color: red;
-
   position: relative;
 }
 .doorRight{
@@ -46,4 +49,22 @@ a{
   height: 30vh;
   background-color: red;
   position: relative;
+}
+
+#textGraphic{
+  position: absolute;
+  transform: scale(5);
+}
+
+.visible{
+  display: flex;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
