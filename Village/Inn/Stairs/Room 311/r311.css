@@ -1,4 +1,4 @@
-.body{
+body{
     margin: 0;
     border: 0;
     background-color: rgb(25, 32, 51);
@@ -176,12 +176,7 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
 
 /* below this line is area specific styles*/
 
-.visible{
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
+
 
 #nightstand p:hover + .hiddenimg{
     opacity: 1;
@@ -193,11 +188,18 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
     transition: 1s ease-in-out;
 }
 
-/* this is to test an animation
+
 .animation-container {
   display: none;
   width : 200px;
   height : 300px;
+}
+
+.visible{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .coinContainer {
@@ -375,4 +377,3 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
     transform : rotate(25deg) translateY(400px);
   }
 }
-*/

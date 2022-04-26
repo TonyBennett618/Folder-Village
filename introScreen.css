@@ -32,7 +32,7 @@ a{
   align-items: center;
   position: fixed;
   opacity: 0;
-  animation: appear ease-in-out;
+  animation: popIn ease-in-out;
   animation-delay: 8500;
 }
 
@@ -60,7 +60,7 @@ a{
   display: flex;
 }
 
-@keyframes appear{
+@keyframes popIn{
   0%{
     opacity: 0;
   }
