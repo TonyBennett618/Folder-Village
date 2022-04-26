@@ -176,8 +176,6 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
 
 /* below this line is area specific styles*/
 
-
-
 #nightstand p:hover + .hiddenimg{
     opacity: 1;
     transition: 1s ease-in-out;

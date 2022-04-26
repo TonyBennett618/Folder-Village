@@ -59,6 +59,9 @@ a{
 .visible{
   display: flex;
 }
+.gone{
+  display: flex;
+}
 
 @keyframes popIn{
   0%{

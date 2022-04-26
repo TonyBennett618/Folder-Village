@@ -35,6 +35,22 @@
     direction: 'alternate'
   });
  // this is for the door mechanism
+
+  var door = document.getElementsByClassName("doorHold");
+  var text = document.getElementById("textGraphic");
+  const timeout = setTimeout(text, 8000)
+  function text(){
+    //makes it disappear
+    text.classList.add("gone");
+  }
+
+  const timeout1 = setTimeout(door, 8500);
+  function door(){
+    //makes it appear
+    door.classList.add("visible");
+  }
+
+
   anime({
     targets: '.doorLeft',
     delay: 10000,
