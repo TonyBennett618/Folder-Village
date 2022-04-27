@@ -28,7 +28,7 @@ a{
 }
 
 .doorHold{
-  display: flex;
+  display: none;
   align-items: center;
   position: fixed;
   opacity: 0;
@@ -60,7 +60,7 @@ a{
   display: flex;
 }
 .gone{
-  display: flex;
+  display: none;
 }
 
 @keyframes popIn{
