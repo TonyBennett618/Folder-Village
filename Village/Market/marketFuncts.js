@@ -4,10 +4,10 @@ function purchaseFruitAndCheese() {
     var stand = document.getElementById("fruitAndCheese")
     var anim = document.getElementsByClassName("animation-container")
     if (confirm("Purchase item?") == true) {
-  
+
       //play sleep anim (create animation)
       coin.classList.add("visible");
-    
+
       anime({
         targets: '.animation-container',
         delay: 5000,
@@ -24,14 +24,14 @@ function purchaseFruitAndCheese() {
       alert("You decide not to buy anything.");
     }
   };
-function purchaseFruitAndCheese() {
+function purchaseClothing() {
     var stand = document.getElementById("fruitAndCheese")
     var anim = document.getElementsByClassName("animation-container")
     if (confirm("Purchase item?") == true) {
-  
+
       //play sleep anim (create animation)
       coin.classList.add("visible");
-    
+
       anime({
         targets: '.animation-container',
         delay: 5000,
@@ -52,10 +52,10 @@ function purchaseTrinket() {
     var stand = document.getElementById("trinkets")
     var anim = document.getElementsByClassName("animation-container")
     if (confirm("Purchase item?") == true) {
-  
+
       //play sleep anim (create animation)
       coin.classList.add("visible");
-    
+
       anime({
         targets: '.animation-container',
         delay: 5000,
