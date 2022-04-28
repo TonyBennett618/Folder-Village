@@ -28,10 +28,9 @@ a{
 }
 
 .doorHold{
-  display: none;
+  display: flex;
   align-items: center;
   position: fixed;
-  opacity: 0;
   animation: popIn ease-in-out;
   animation-delay: 8500;
 }

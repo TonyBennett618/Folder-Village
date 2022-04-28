@@ -1,4 +1,4 @@
-.body{
+body{
     margin: 0;
     border: 0;
     background-color: rgb(25, 32, 51);
@@ -87,7 +87,7 @@ a{
     font-size:x-large;
     padding-left: 50px;
     padding-right: 50px;
-    font-weight: bold;  
+    font-weight: bold;
     text-align: center;
 }
 

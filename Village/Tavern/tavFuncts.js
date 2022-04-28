@@ -140,6 +140,7 @@ function angelaDialogueYes(){
     var ok = document.getElementsByClassName("ok");
 
 
+
     // Get the <span> element that closes the modal
     // var span = document.getElementsByClassName("close")[1];
 
@@ -160,9 +161,25 @@ function angelaDialogueYes(){
     nextModal.style.display = "block"
 
     ok.onclick = function(){
-    nextModal.style.display = "none";
+      nextModal.style.display = "none";
+      beerTime()
     }
 };
+
+function beerTime(){
+  var anim = document.getElementsByClassName("animation-container-1")
+
+  alert("beer time")
+
+  anim.classList.add("visible")
+
+  anime({
+    targets:'#beer',
+    delay: 2000,
+    scaleY: 100
+
+  });
+}
 
 function angelaDialogueNo(){
   var prevModal = document.getElementById("angelaModal");
