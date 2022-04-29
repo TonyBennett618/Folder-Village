@@ -177,9 +177,9 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
 /* below this line is area specific styles*/
 
 
-.animation-container-1 {
-display: flex;
-width : 400px;
+.animation-container1 {
+display: none;
+width : 500px;
 height : 300px;
 flex-direction: row;
 }
@@ -193,18 +193,15 @@ left: 45%;
 
 .beerContainer{
   position: relative;
-  display: block;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+
   height: 300px;
   width: 250px;
 }
 
 .beerContainer-1{
   position: relative;
-  display: block;
-  align-items: center;
-  justify-content: center;
+  display: none;
   height: 300px;
   width: 250px;
 }

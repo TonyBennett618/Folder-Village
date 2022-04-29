@@ -34,8 +34,10 @@ function purchaseClothing() {
 
       anime({
         targets: '.animation-container',
-        delay: 5000,
-        translateY: -600,
+        translateY:(
+          {value: -600,  delay: 5000},
+          {value: 600,  delay: 7000}
+        ), 
         easing: 'easeInOutSine',
       });
       const timeout = setTimeout(anima, 7000)

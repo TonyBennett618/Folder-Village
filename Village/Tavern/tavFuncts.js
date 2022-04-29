@@ -167,31 +167,45 @@ function angelaDialogueYes(){
 
 function beerTime(){
   closeIt()
-  //var beer = document.getElementsByClassName("animation-container-1")
+  var beer = document.getElementsByClassName("animation-container-1")
 
   //alert("beer time")
 
-  $(".animation-container-1").addClass("visible").css("display","block");
+  $(".animation-container1").addClass("visible").css("display","flex");
 
   anime({
     targets:'#beer',
-    keyframes:[
-      {translateY: 100},
-      {scaleY: [0, 100]}
+    translateY: [
+      {value: 100},
+      {value: 0, delay: 7600}
+    ],
+    scaleY:[
+      {value: [0, 100], delay: 1000},
+      {value: [100, 0], delay: 7500}
     ]
     
   });
   anime({
     targets: ".bubbles",
     delay: 3000,
-    opacity: [0, 1]
-  })
+    opacity: [
+      {value: [0, 1]},
+      {value: 0, delay:7500}
+    ]
+
+  });
 
   anime({
     targets: ".beerContainer",
-    translateX: 50,
-    delay: 4000
-  })
+    translateX: (
+      {value: 50, delay: 4000},
+      {value: -50, delay: 7500}
+    )
+  });
+  let timeout = setTimeout(beer, 7000)
+      function beer(){
+        $(".animation-container1").removeClass("visible").css("display","none");
+      }
 }
 
 function angelaDialogueNo(){
