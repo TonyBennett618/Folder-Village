@@ -96,9 +96,9 @@
                 <p id="patronTwo">Ethan</p>
                 <p class="hidden">Spirits are high today! Everyone is havin' a good time!</p>
             </div>
-            <div class="item person">
+            <div class="item person" id="Angela"  onclick="angelaDialogue()">
                 <img class="icon" src="../userIcon.png">
-                <p id="Angela" onclick="angelaDialogue()">Angela</p>
+                <p>Angela</p>
                 <p class="hidden">You seem new, let me treat you to a drink.</p>
             </div>
             <div class="item"></div>
@@ -308,7 +308,7 @@
                 Hey there stranger! You seem new, can I buy you a tankard of mead?
             </p>
             <button class="button yes" onclick="angelaDialogueYes()">Ok</button>
-            <button class="button no" onClick="angelaDialogueNo()">Cancel</button>
+            <button class="button no" onclick="angelaDialogueNo()">Cancel</button>
         </div>
 
     </div>
@@ -318,7 +318,7 @@
             <span class="close">&times;</span>
               <p class = "curDial">
                   More the merrier, here ya go!
-              <button class="button ok" onclick="closeIt()">Ok</button>
+              <button class="button ok" onclick="beerTime()">Ok</button>
         </div>
     </div>
 

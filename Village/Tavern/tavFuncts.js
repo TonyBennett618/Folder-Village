@@ -161,17 +161,17 @@ function angelaDialogueYes(){
     nextModal.style.display = "block"
 
     ok.onclick = function(){
-      nextModal.style.display = "none";
-      beerTime()
+      nextModal.style.display = "none"
     }
 };
 
 function beerTime(){
-  var anim = document.getElementsByClassName("animation-container-1")
+  closeIt()
+  //var beer = document.getElementsByClassName("animation-container-1")
 
-  alert("beer time")
+  //alert("beer time")
 
-  anim.classList.add("visible")
+  $(".animation-container-1").addClass("visible").css("display","block");
 
   anime({
     targets:'#beer',
