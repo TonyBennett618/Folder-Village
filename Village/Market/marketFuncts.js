@@ -43,7 +43,7 @@ function purchaseClothing() {
             coin.classList.remove("visible");
       }
 
-      alert("You have purchased half a dozen apples, and some goat cheese.")
+      alert("You purchase a fine blouse, and some newly polished shoes.")
     } else {
       alert("You decide not to buy anything.");
     }

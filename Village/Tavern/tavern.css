@@ -178,21 +178,29 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
 
 
 .animation-container-1 {
-display: none;
-width : 200px;
+display: flex;
+width : 400px;
 height : 300px;
-align-items: center;
-justify-content: center;
+flex-direction: row;
 }
 
 .visible{
-display: block;
+display: flex;
 position: absolute;
 top: 30%;
 left: 45%;
 }
 
 .beerContainer{
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 250px;
+}
+
+.beerContainer-1{
   position: relative;
   display: block;
   align-items: center;
@@ -209,7 +217,27 @@ left: 45%;
   border-radius: 0 0 20% 20% / 0 0 15% 15%;
 }
 
+#mug-1{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  border: 8px solid #ffffff;
+  border-radius: 0 0 20% 20% / 0 0 15% 15%;
+}
+
 #mug::before{
+  content: '';
+  height: 60%;
+  width: 25%;
+  border: 8px solid #ffffff;
+  position: absolute;
+  left: -49%;
+  top: 15%;
+  border-radius: 50% 0 0 50% / 12% 0 0  12%;
+
+}
+
+#mug-1::after{
   content: '';
   height: 60%;
   width: 25%;
@@ -228,6 +256,7 @@ left: 45%;
   height: 1%;
   background: #ffd54f;
   border-radius: 0 0 15% 15% / 0 0 10% 10%;
+  transform: translateY(200px);
 }
 
 .bubbles{

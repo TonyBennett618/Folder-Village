@@ -175,10 +175,23 @@ function beerTime(){
 
   anime({
     targets:'#beer',
-    delay: 2000,
-    scaleY: 100
-
+    keyframes:[
+      {translateY: 100},
+      {scaleY: [0, 100]}
+    ]
+    
   });
+  anime({
+    targets: ".bubbles",
+    delay: 3000,
+    opacity: [0, 1]
+  })
+
+  anime({
+    targets: ".beerContainer",
+    translateX: 50,
+    delay: 4000
+  })
 }
 
 function angelaDialogueNo(){
