@@ -8,6 +8,8 @@ function closeIt(){
   //alert("boop");
   //current.style.display = "none"
   $(".modal").removeClass("current").css("display","none");
+  $("#coin").removeClass("visible").css("display","none");
+  $(".animation-container1").removeClass("visible").css("display","none");
 }
 
 //bartender dialogue
@@ -45,7 +47,7 @@ function barDialogueYes(){
     var prevModal = document.getElementById("barModal");
     var nextModal = document.getElementById("barModalYes");
     var ok = document.getElementsByClassName("ok");
-
+    
 
     // Get the <span> element that closes the modal
     // var span = document.getElementsByClassName("close")[1];
@@ -165,6 +167,16 @@ function angelaDialogueYes(){
     }
 };
 
+function coin(){
+  closeIt()
+  var aCoin = document.getElementById("coin");
+  
+  $(".animation-container").addClass("visible").css("display","flex");
+  setTimeout(() => {
+    closeIt()
+  }, 4000);
+};
+
 function beerTime(){
   closeIt()
   var beer = document.getElementsByClassName("animation-container-1")
@@ -202,11 +214,12 @@ function beerTime(){
       {value: -50, delay: 7500}
     )
   });
-  let timeout = setTimeout(beer, 7000)
-      function beer(){
-        $(".animation-container1").removeClass("visible").css("display","none");
-      }
-}
+
+  setTimeout(() => {
+    closeIt()
+  }, 7500);
+
+};
 
 function angelaDialogueNo(){
   var prevModal = document.getElementById("angelaModal");
