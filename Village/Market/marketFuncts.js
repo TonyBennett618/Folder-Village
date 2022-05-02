@@ -8,12 +8,12 @@ function purchaseFruitAndCheese() {
       //play sleep anim (create animation)
       coin.classList.add("visible");
 
-      anime({
-        targets: '.animation-container',
-        delay: 5000,
-        translateY: -600,
-        easing: 'easeInOutSine',
-      });
+      //anime({
+      //  targets: '.animation-container',
+      //  delay: 5000,
+      //  translateY: -600,
+      //  easing: 'easeInOutSine',
+      //});
       const timeout = setTimeout(anima, 7000)
       function anima(){
             coin.classList.remove("visible");
@@ -29,17 +29,16 @@ function purchaseClothing() {
     var anim = document.getElementsByClassName("animation-container")
     if (confirm("Purchase item?") == true) {
 
-      //play sleep anim (create animation)
       coin.classList.add("visible");
 
-      anime({
-        targets: '.animation-container',
-        translateY:(
-          {value: -600,  delay: 5000},
-          {value: 600,  delay: 7000}
-        ), 
-        easing: 'easeInOutSine',
-      });
+      //anime({
+      //  targets: '.animation-container',
+      //  translateY:(
+      //    {value: -600,  delay: 5000},
+      //    {value: 600,  delay: 700}
+      //  ), 
+      //  easing: 'easeInOutSine',
+      //});
       const timeout = setTimeout(anima, 7000)
       function anima(){
             coin.classList.remove("visible");
@@ -58,12 +57,12 @@ function purchaseTrinket() {
       //play sleep anim (create animation)
       coin.classList.add("visible");
 
-      anime({
-        targets: '.animation-container',
-        delay: 5000,
-        translateY: -600,
-        easing: 'easeInOutSine',
-      });
+      //anime({
+      //  targets: '.animation-container',
+      //  delay: 5000,
+      //  translateY: -600,
+       // easing: 'easeInOutSine',
+      //});
       const timeout = setTimeout(anima, 7000)
       function anima(){
             coin.classList.remove("visible");
