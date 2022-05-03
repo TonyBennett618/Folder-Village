@@ -106,20 +106,30 @@ function innDialogueNo(){
 // bed function
 function goToSleep() {
   var bed = document.getElementById("bed")
-  var animation = document.getElementById("coin")
-  var anim = document.getElementsByClassName("")
+  var animation = document.getElementById("sun")
+  var anim = document.getElementsByClassName("sunContainter")
   if (confirm("Go To Sleep?") == true) {
 
-    //play sleep anim (create animation)
-    coin.classList.add("visible");
+    //play sleep anim (create animation)s
+    $(".sunContainer").addClass("visible").css("display","flex");
 
-    const timeout = setTimeout(animation, 5000)
+    sleepAnim()
+
+    const timeout = setTimeout(animation, 7000)
     function animation(){
-          coin.classList.remove("visible");
+          $(".sunContainer").removeClass("visible").css("display","none");
           //alert("begone thot")
     }
     alert("You get a good rest. You feel awake.")
   } else {
     alert("You decide not to sleep.");
   }
+}
+
+function sleepAnim(){
+  anime({
+    targets: ".sun",
+    translateY: 100,
+    easing: 'easeInOutLinear'
+  });
 }
