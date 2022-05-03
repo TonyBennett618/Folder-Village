@@ -2,7 +2,7 @@
     <title>
         Room 313
     </title>
-    <link rel="stylesheet" href="r313.css">
+    <link rel="stylesheet" href="../Room 311/r311.css">
     <body>
         <div class="container">
             <div class="assetRow">
@@ -27,9 +27,9 @@
                 <div class="item"></div>
                 <div class="item"></div>
                 <div class="item"></div>
-                <div class="item" id="bed">
+                <div class="item" id="bed"  onclick="goToSleep()">
                     <img src="../../../imgIcon.png">
-                    <p id="bed" onclick="goToSleep()">bed.jpg</p>
+                    <p id="bed">bed.jpg</p>
                     <img class="hiddenimg" src="bed.png">
                 </div>
                 <div class="item" id="nightstand">
@@ -190,5 +190,8 @@
 
         </div>
     </body>
+    <script src="../../../../anime.min.js"></script>
+    <script src="../../../jquery-3.6.0.min.js"></script>
     <script src="functions.js"></script>
+    <script src="../../innFuncts.js"></script>
 </html>

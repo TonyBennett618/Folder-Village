@@ -113,9 +113,17 @@ function goToSleep() {
     //play sleep anim (create animation)s
     $(".sunContainer").addClass("visible").css("display","flex");
 
-    sleepAnim()
+    anime({
+      targets: ".sun",
+      keyframes: [
+        {translateY: 200},
+        {translateY: 0}
+      ],
+      duration: 9000,
+      easing: 'easeInOutExpo'
+    });
 
-    const timeout = setTimeout(animation, 7000)
+    const timeout = setTimeout(animation, 11000)
     function animation(){
           $(".sunContainer").removeClass("visible").css("display","none");
           //alert("begone thot")
@@ -126,10 +134,10 @@ function goToSleep() {
   }
 }
 
-function sleepAnim(){
-  anime({
-    targets: ".sun",
-    translateY: 100,
-    easing: 'easeInOutLinear'
-  });
-}
+//function sleepAnim(){
+//  anime({
+///    targets: ".sun",
+//    translateY: 100,
+//    easing: 'easeInOutLinear'
+//  });
+//}

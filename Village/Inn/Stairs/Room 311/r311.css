@@ -188,7 +188,7 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
 
 
 .sunContainer {
-  display: flex;
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -196,6 +196,7 @@ This is the only thing i will copy, since it fits the aesthetic really well.*/
   width: 200px;
   height: 200px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .visible{
